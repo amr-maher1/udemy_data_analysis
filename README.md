@@ -162,7 +162,7 @@ Analyzed relationship between:
 
 Levels vs Number of Lectures
 
-<img width="552" height="708" alt="download" src="https://github.com/user-attachments/assets/bac17273-878b-44fc-acaf-ec8608d15a49" />
+<img width="1617" height="853" alt="download" src="https://github.com/user-attachments/assets/ba8c3ac1-773e-460f-a24a-6a1018f59651" />
 
 
 Lectures vs Reviews
