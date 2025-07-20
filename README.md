@@ -100,7 +100,7 @@ Web Development      All Levels            659
 - Udemy's potential earnings.
   is equale= 884982395.0
 
-### 🟩 is_paid
+###  is_paid
 - How many courses are free vs paid?
 Is_paid    3372
 Free       310
