@@ -192,7 +192,10 @@ Free: 310
 
 -Paid vs Free per subject:
 
-<img width="886" height="810" alt="download" src="https://github.com/user-attachments/assets/7ad062cc-bc4c-40f8-af7e-aad70d8bb388" />
+
+<img width="627" height="602" alt="download" src="https://github.com/user-attachments/assets/0e57eeab-df78-4c48-851c-c0afde0ed21e" />
+
+
 
 
 # Course Titles
