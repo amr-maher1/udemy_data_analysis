@@ -1,122 +1,219 @@
-#  Udemy Data Analysis Project 
 
-##  Overview
+## Udemy Courses Data Analysis Report
+# Overview
+This exploratory data analysis (EDA) project explores a large dataset of Udemy online courses to uncover key insights related to course subjects, pricing, levels, popularity, number of subscribers, and other metrics.
+The dataset contains thousands of courses across multiple categories. The analysis was conducted using Python in a Jupyter Notebook environment.
 
-This project is an exploratory data analysis (EDA) on a Udemy courses dataset. The goal is to derive insights about course subjects, prices, levels, subscribers, and more.
+# Objectives
+This project aims to answer the following key questions:
 
-The analysis was performed using Python in a Jupyter Notebook. The dataset includes information about thousands of Udemy courses.
+# Subjects:
 
----
+-What is the distribution of courses per subject?
 
-##  Objectives & Questions Answered
+-Which subject is the most popular in terms of subscribers?
 
-###  Subject
-- What is the distribution of subjects?
+# Subscribers:
 
-  
-  <img width="561" height="547" alt="download" src="https://github.com/user-attachments/assets/95a64932-e511-4894-913c-1f0e02e3d83b" />
+-How many subscribers per subject?
 
-  
-- How many courses per subject?
-  Web Development        1200
-  Business Finance       1199
-  Musical Instruments     681
-  Graphic Design          603
-- Which subject is the most popular?
-  the most popular subject is  Web Development
-###  Subscribers
-- Number of subscribers per subject.
-  we find that
-  Business Finance       1870747
-  Graphic Design         1063148
-  Musical Instruments    846719
-  Web Development        7980572
-- Aggregate stats (min, max, mean, sum).
-  mean= 3193.3711648112953
-  max= 268923
-  min= 0
-  sum= 11761186
-- Course with the highest number of subscribers.
-  the course is Learn HTML5 Programming From Scratch
-- Number of subscribers per year.
-  2011     119028
-  2012     555339
-  2013    1723438
-  2014    1930406
-  2015    3475324
-  2016    2966644
-  2017     991007
-###  Level
-- How many levels exist?
-All Levels            1932
-Beginner Level        1271
-Intermediate Level    421
-Expert Level          58
-- Distribution of courses per level.
+-What are the overall stats for subscribers (mean, max, min, sum)?
 
-  
-  <img width="561" height="521" alt="download" src="https://github.com/user-attachments/assets/195bf1fa-0771-4647-83ec-07239f64f6fa" />
+-What is the course with the highest number of subscribers?
+
+-How does the number of subscribers change by year?
+
+# Course Levels:
+
+-How many levels are there?
+
+-How are courses distributed across levels and subjects?
+
+-What is the most common level?
+
+# Lectures:
+
+-What is the relationship between course level and number of lectures?
+
+-What is the relationship between lectures and reviews?
+
+# Price Analysis:
+
+-What is the average, minimum, and maximum course price?
+
+-What is the most profitable course?
+
+-What are Udemy's potential total earnings?
+
+# Paid vs Free Courses:
+
+-How many courses are free vs paid?
+
+-How are free/paid courses distributed across different subjects?
+
+# Course Titles:
+
+-What are the longest and shortest course titles?
+
+# Dataset Description
+-Source: Udemy course dataset
+
+Key Columns:
+
+subject
+
+price
+
+level
+
+num_subscribers
+
+num_lectures
+
+num_reviews
+
+is_paid
+
+published_timestamp
+
+title
+
+## Key Findings
+# Subject Distribution
+-Total courses per subject:
+
+Web Development: 1200 courses
+
+Business Finance: 1199 courses
+
+Musical Instruments: 681 courses
+
+Graphic Design: 603 courses
+
+-Most popular subject (by total subscribers): Web Development
+
+# Subscribers Analysis
+-Subscribers per subject:
+
+Web Development: 7,980,572
+
+Business Finance: 1,870,747
+
+Graphic Design: 1,063,148
+
+Musical Instruments: 846,719
+
+-Aggregate statistics:
+
+Mean: 3,193
+
+Max: 268,923
+
+Min: 0
+
+Total: 11,761,186
+
+-Course with the most subscribers:
+Learn HTML5 Programming From Scratch
+
+-Subscribers per year:
+
+2011: 119,028
+
+2012: 555,339
+
+2013: 1,723,438
+
+2014: 1,930,406
+
+2015: 3,475,324
+
+2016: 2,966,644
+
+2017: 991,007
+
+# Course Levels
+-Number of levels:
+
+All Levels: 1,932
+
+Beginner: 1,271
+
+Intermediate: 421
+
+Expert: 58
+
+-Most common level: All Levels
+
+-Distribution per subject and level:
+
+<img width="552" height="708" alt="download" src="https://github.com/user-attachments/assets/ea39cd28-4210-4ac6-ac7f-eb0ed97c1e23" />
 
 
-- Subscribers per level.
-subject              level             
-Business Finance     All Levels            699
-                     Beginner Level        341
-                     Intermediate Level    128
-                     Expert Level           31
-Graphic Design       All Levels            298
-                     Beginner Level        243
-                     Intermediate Level     57
-                     Expert Level            5
-Musical Instruments  Beginner Level        296
-                     All Levels            276
-                     Intermediate Level    101
-                     Expert Level            7
-                     52                      1
-Web Development      All Levels            659
-                     Beginner Level        391
-                     Intermediate Level    135
-                     Expert Level           15
-- Most common level per subject.
-  The most commen level is all level
-###  Lectures
-- Relation between levels and lectures.
 
-<img width="1617" height="853" alt="download" src="https://github.com/user-attachments/assets/20fedc48-b75a-4341-8db9-f3e123753295" />
+-Subject	All Levels	Beginner	Intermediate	Expert
+Web Development	659	391	135	15
+Business Finance	699	341	128	31
+Graphic Design	298	243	57	5
+Musical Instruments	276	296	101	7
 
-  
-- Lectures vs reviews.
+# Lectures Analysis
+Analyzed relationship between:
 
-  
-<img width="1634" height="853" alt="download" src="https://github.com/user-attachments/assets/db9cf4d1-c563-4dee-9894-41d3f3a24a04" />
+Levels vs Number of Lectures
+
+<img width="552" height="708" alt="download" src="https://github.com/user-attachments/assets/bac17273-878b-44fc-acaf-ec8608d15a49" />
 
 
-###  Price
-- Average, minimum, and maximum course prices.
-  max= 200
-  min= 0
-- Most profitable courses.
-  The most profitable course is The Web Developer Bootcamp
-- Udemy's potential earnings.
-  is equale= 884982395.0
+Lectures vs Reviews
 
-###  is_paid
-- How many courses are free vs paid?
-Is_paid    3372
-Free       310
-- Distribution of paid/free courses per subject.
-
-<img width="561" height="455" alt="download" src="https://github.com/user-attachments/assets/f8177bb4-5c0c-4e9b-8d8a-bb3b1cec083f" />
+<img width="1634" height="853" alt="download" src="https://github.com/user-attachments/assets/47d19a37-7a1b-4903-ab12-a59ca2fa8c61" />
 
 
-###  Course Title
-- Longest and shortest course titles.
-is Aprende a tocar el Acordeón 'de oído y con téc..
----
 
-##  Tools & Libraries Used
-- Python
-- Jupyter Notebook
-- Pandas
-- Matplotlib / Seaborn
-- Numpy
+# Price Analysis
+Max price: $200
+
+Min price: $0
+
+
+- Most profitable course:
+The Web Developer Bootcamp
+
+- Estimated total earnings:
+$884,982,395.00
+
+- Paid vs Free Courses
+Number of courses:
+
+Paid: 3,372
+
+Free: 310
+
+-Paid vs Free per subject:
+
+<img width="886" height="810" alt="download" src="https://github.com/user-attachments/assets/7ad062cc-bc4c-40f8-af7e-aad70d8bb388" />
+
+
+# Course Titles
+-Longest title:
+Aprende a tocar el Acordeón 'de oído y con técnica'
+
+
+# Tools & Libraries Used
+Tool	Purpose
+Python	Programming language
+Jupyter	Interactive coding
+Pandas	Data manipulation
+NumPy	Numerical operations
+Matplotlib	Data visualization
+Seaborn	Statistical visualization
+
+#Insights & Recommendations
+-Investing in Web Development content can attract a high number of subscribers.
+
+-Courses at the "All Levels" tier are most common and may appeal to broader audiences.
+
+-High subscriber count does not always mean high revenue — pricing plays a key role.
+
+-Udemy’s free courses attract users, but paid content dominates the platform’s potential revenue.
