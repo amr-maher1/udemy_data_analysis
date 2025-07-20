@@ -205,12 +205,12 @@ Aprende a tocar el Acordeón 'de oído y con técnica'
 
 # Tools & Libraries Used
 Tool	Purpose
-Python	Programming language
-Jupyter	Interactive coding
-Pandas	Data manipulation
-NumPy	Numerical operations
-Matplotlib	Data visualization
-Seaborn	Statistical visualization
+-Python	Programming language
+-Jupyter	Interactive coding
+-Pandas	Data manipulation
+-NumPy	Numerical operations
+-Matplotlib	Data visualization
+-Seaborn	Statistical visualization
 
 # Insights & Recommendations
 -Investing in Web Development content can attract a high number of subscribers.
