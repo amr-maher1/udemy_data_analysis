@@ -212,7 +212,7 @@ NumPy	Numerical operations
 Matplotlib	Data visualization
 Seaborn	Statistical visualization
 
-#Insights & Recommendations
+# Insights & Recommendations
 -Investing in Web Development content can attract a high number of subscribers.
 
 -Courses at the "All Levels" tier are most common and may appeal to broader audiences.
